@@ -429,7 +429,10 @@ var deployToken = function(req, res){
     var tokenName = req.body.tokenName
     var decimalUnits = req.body.decimalUnits
     var tokenSymbol = req.body.tokenSymbol
-    var ethereumAddress = req.body.ethereumAddress
+    //var ethereumAddress = req.body.ethereumAddres;
+    //var startsAt = req.body.startsAt;
+    //var endsAt = req.body.endsAt;
+
     var deployOpts = {
         data : "0x"+BYTECODE,
         arguments : [initialSupply,tokenName,decimalUnits,tokenSymbol]
